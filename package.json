@@ -1,0 +1,41 @@
+{
+  "name": "nuskin",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "build-www": "cross-env NODE_ENV=prod vue-cli-service build",
+    "build-dev": "cross-env NODE_ENV=development vue-cli-service build"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.10.1",
+    "axios": "^0.19.2",
+    "babel-polyfill": "^6.26.0",
+    "core-js": "^3.6.4",
+    "cross-env": "^7.0.2",
+    "es6-promise": "^4.2.8",
+    "jquery": "^3.5.1",
+    "qs": "^6.9.4",
+    "swiper": "^5.4.5",
+    "vue": "^2.6.11",
+    "vue-meta": "^2.4.0",
+    "vue-resource": "^1.5.1",
+    "vue-router": "^3.1.5",
+    "vuex": "^3.1.2"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.2.0",
+    "@vue/cli-plugin-router": "~4.2.0",
+    "@vue/cli-plugin-vuex": "~4.2.0",
+    "@vue/cli-service": "~4.2.0",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^8.0.2",
+    "vue-loader": "^15.9.3",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "browserslist": [
+    "> 0.25%",
+    "last 2 versions"
+  ]
+}

@@ -1,0 +1,168 @@
+@CHARSET "UTF-8";
+
+html {min-height:100%; /* scroll-behavior:smooth; */}
+body {min-height:100%; -webkit-text-size-adjust:none;}
+[v-cloak] {display:none;}
+@keyframes cloak-in {
+	0% {opacity:0;}
+}
+@media all and (max-width:768px){
+    html, body {overflow-x:hidden;}
+}
+.ch-appContents[v-cloak] {opacity:0;}
+.ch-appContents {position:relative; animation:cloak-in 1s; color:#212121; word-break:keep-all; word-wrap:break-word; overflow-wrap:break-word; -ms-word-break:normal; box-sizing:border-box; -webkit-overflow-scrolling:touch;
+    * {word-break:keep-all; word-wrap:break-word; overflow-wrap:break-word; -ms-word-break:normal; box-sizing:border-box; -webkit-overflow-scrolling:touch;}
+    td, div, p, li, dt, dd, input, button, textarea, h1, h2, h3, h4, h5 {font-family:"Noto Sans KR","Arial",sans-serif; font-size:16px; line-height:1.5em; font-weight:400;}
+    header, footer, section, article, nav, aside {display:block;}
+    video {position:relative; vertical-align:top; z-index:10;}
+    img {max-width:100%;}
+    button {overflow:visible; padding:0; margin:0; border:0; outline:none; background:none; cursor:pointer;}
+    legend, .desc {position:fixed; left:-1000px; top:-1000px; overflow:hidden; width:0; height:0;}
+
+    textarea	 {width:100%; border: 1px solid #bcbcbc;  padding:10px; margin:0; line-height:20px; border-radius:0; box-shadow:none; vertical-align:top; background:#fff;}
+    em	{font-style:normal;}
+
+    a		{color:#212121; text-decoration:none; cursor:pointer;}
+    a:visited	{color:#212121; text-decoration:none;}
+    a:hover 	{color:#212121; text-decoration:none;}
+    a:focus 	{color:#212121; text-decoration:none;}
+    a:active	{color:#212121; text-decoration:none;}
+
+    span.br {display:block !important;}
+    .none {width:100% !important; height:auto !important; min-height:auto !important; padding:100px 0 !important; margin:0 !important; border:0; border-bottom:1px solid #dbdbdb; line-height:1em !important; font-size:16px !important; text-align:center; background:none !important;
+        &:before {content:""; display:block; width:44px; height:50px; margin:0 auto 20px; background:url(https://resource2018.nuskinkorea.co.kr/ContentsImages/static/images/common/ico_list2.png) no-repeat 0 0;}
+    }
+    .colorA {color:#f66a5b;}
+
+    #c-wrapper {
+        &.fixed {padding-top:50px;}
+    }
+    #c-container {max-width:1100px; padding:85px 20px 120px; margin:0 auto;}
+    #c-heading {position:relative; height:160px; text-align:center;
+        h1 {font-size:46px; font-weight:600; line-height:1em;}
+        .srmy {margin-top:30px; line-height:1em;}
+        &.typeB {height:55px;
+            h1 {float:left; font-size:22px; font-weight:600; line-height:1em; color:#888;
+                .sub {position:relative; top:-2px; display:inline-block; margin-left:10px; vertical-align:middle; font-size:18px; font-weight:500;
+                    &:before {content:""; display:inline-block; width:1px; height:12px; margin:-3px 10px 0 0; vertical-align:middle; background:#ddd;}
+                }
+            }
+            &:after {content:""; display:block; clear:both;}
+        }
+    }
+
+    .loading {overflow:hidden; position:fixed; left:0; right:0; top:0; bottom:0; z-index:100; padding-left:100%; white-space:nowrap; background:rgba(255,255,255,.4);
+        &:before {content:""; position:absolute; left:50%; top:50%; width:200px; height:200px; margin:-100px 0 0 -100px; background:url(https://resource2018.nuskinkorea.co.kr/ContentsImages/static/images/common/loading.gif) no-repeat 0 0;}
+        &.inner {position:absolute;}
+        &.inner:before {width:100px; height:100px; margin:-50px 0 0 -50px; background-size:100%;}
+    }
+    .innerLoading {overflow:hidden; width:100% !important; height:500px !important; min-height:auto !important; padding:150px 0 150px 100% !important; margin:0 !important; border:0 !important; white-space:nowrap; line-height:1em !important; font-size:16px !important; text-align:center; background:#fff !important;
+        &:before {content:""; position:absolute; left:50%; top:50%; width:200px; height:200px; margin:-100px 0 0 -100px; background:url(https://resource2018.nuskinkorea.co.kr/ContentsImages/static/images/common/loading.gif) no-repeat 0 0;}
+    }
+
+    .btnArea {margin-top:80px; text-align:center;
+        .btnList {font-size:22px; line-height:1em;
+            &:before {content:""; display:inline-block; width:24px; height:17px; margin:-3px 18px 0 0; vertical-align:middle; background:url(https://resource2018.nuskinkorea.co.kr/ContentsImages/static/images/common/ico_list.png) no-repeat 0 0;}
+        }
+        .btnMore {position:relative; display:inline-block; width:200px; height:54px; padding-left:75px; border:1px solid #aaa; font-weight:600; text-align:left; transition:all .1s;
+            &:before, &:after {content:""; position:absolute; right:36px; top:50%; width:0; height:0; background:#75a0d5; transition:all .1s;}
+            &:hover {padding-left:30px; border-color:#75a0d5; color:#75a0d5;}
+            &:hover:before {right:30px; width:14px; height:2px; margin-top:-1px;}
+            &:hover:after {width:2px; height:14px; margin-top:-7px; transition-delay:.1s;}
+        }
+    }
+
+    .icoMore {position:relative; padding-right:37px;
+        &:before, &:after {content:""; position:absolute; right:0; top:50%; width:9px; height:2px; margin-top:-5px; background:#fff; -webkit-transition:all 0.2s; -moz-transition:all 0.2s; -o-transition:all 0.2s; transition:all 0.2s;}
+        &:before {right:3px; -webkit-transform:rotate(45deg); -moz-transform:rotate(45deg); -o-transform:rotate(45deg); transform:rotate(45deg); -webkit-transform-origin:0; -moz-transform-origin:0; -o-transform-origin:0; transform-origin:0;}
+        &:after {-webkit-transform:rotate(-45deg); -moz-transform:rotate(-45deg); -o-transform:rotate(-45deg); transform:rotate(-45deg); -webkit-transform-origin:100%; -moz-transform-origin:100%; -o-transform-origin:100%; transform-origin:100%;}
+        &:hover:before, &:focus:before, &.on:before {margin-top:0; -webkit-transform:rotate(-45deg); -moz-transform:rotate(-45deg); -o-transform:rotate(-45deg); transform:rotate(-45deg);}
+        &:hover:after, &:focus:after, &.on:after {margin-top:0; -webkit-transform:rotate(45deg); -moz-transform:rotate(45deg); -o-transform:rotate(45deg); transform:rotate(45deg);}
+    }
+
+    .ell {white-space:nowrap; text-overflow:ellipsis; overflow:hidden;}
+    .ellLine2 {overflow:hidden; display:block; display:-webkit-box !important; -webkit-line-clamp:2; -webkit-box-orient:vertical;}
+    .ellLine3 {overflow:hidden; display:block; display:-webkit-box !important; -webkit-line-clamp:3; -webkit-box-orient:vertical;}
+
+    .tabInit {margin-bottom:40px;
+        ul {display:block;
+            li {position:relative; float:left; width:auto !important; margin:0 50px 15px 0;
+                a, button {opacity:.6; font-size:22px; font-weight:600;}
+                .router-link-exact-active {opacity:1;}
+                .router-link-exact-active:after {content:""; position:absolute; left:-4px; bottom:2px; right:-4px; z-index:-1; height:8px; background:#d59bd1;}
+                &.on button, &.on a {opacity:1;
+                    &:before {content:""; position:absolute; left:-4px; right:-4px; bottom:2px; z-index:-1; height:8px; background:#d59bd1;}
+                }
+                &.last-child {margin-right:0;}
+            }
+        }
+        &:after {content:""; display:block; clear:both;}
+    }
+
+    .pcHidden {display:none;}
+    .mobileHidden {display:block;}
+
+    .fade-enter-active, .fade-leave-active {transition:opacity .3s;}
+    .fade-enter, .fade-leave-to {opacity:0;}
+
+    .slideLR-enter-active, .slideLR-leave-active {transition:all .3s;}
+    .slideLR-enter, .slideLR-leave {transform:translateX(100%);}
+
+    .slideUD-enter-active, .slideUD-leave-active {transition:all .3s;}
+    .slideUD-enter, .slideUD-leave {transform:translateY(100%);}
+
+    @media all and (max-width:768px){
+        html, body {overflow-x:hidden;}
+        #c-container {padding:25px 20px 50px;
+            &.fixed {padding-top:87px;}
+        }
+        #c-heading {padding-bottom:25px;
+            &.typeB {height:auto;
+                h1 {font-size:1rem;
+                    .sub {font-size:1rem;}
+                }
+            }
+        }
+        .pcHidden {display:block;}
+        .mobileHidden {display:none;}
+
+        h1.pcHidden {padding:15px 0 40px; font-size:2rem; font-weight:600; line-height:1em; text-align:center;}
+
+        .innerLoading {height:350px !important; padding:100px 0 100px 100% !important;
+            &:before {width:150px; height:150px; margin:-75px 0 0 -75px; background-size:100%;}
+        }
+
+        .btnArea {margin-top:30px;
+            .btnList {font-size:1.4rem;
+                &:before {width:18px; height:14px; margin-right:10px; background-size:100%;}
+            }
+            .btnMore {position:relative; display:inline-block; width:200px; height:40px; padding-left:75px; border:1px solid #aaa; font-weight:600; line-height:38px; text-align:left; transition:all .1s;
+                &:before, &:after {content:""; position:absolute; right:36px; top:50%; width:0; height:0; background:#75a0d5; transition:all .1s;}
+                &:hover {padding-left:30px; border-color:#75a0d5; color:#75a0d5;}
+                &:hover:before {right:30px; width:14px; height:2px; margin-top:-1px;}
+                &:hover:after {width:2px; height:14px; margin-top:-7px; transition-delay:.1s;}
+            }
+        }
+
+        .tabInit {overflow:visible !important; height:47px; padding:10px !important; margin:-25px -20px 40px !important; border-top:1px solid #ddd; border-bottom:1px solid #ddd; background:#f0f0f0;
+            ul {width:20000px;
+                li {margin-right:10px;
+                    a, button {opacity:1; display:block; height:25px; padding:0 15px; font-size:1rem; line-height:25px;}
+                    .router-link-exact-active, &.on button, &.on a {border-radius:25px; font-weight:500; color:#fff; background:#212121;}
+                    .router-link-exact-active:after {display:none;}
+                    &.on button, &.on a {
+                        &:before {display:none;}
+                    }
+                }
+                &:after {content:""; display:block; clear:both;}
+            }
+            &.fixed {position:fixed !important; left:0; top:0; right:0; z-index:10;}
+        }
+    }
+
+    .container-leave-active {transition:all .1s ease-in;}
+    .container-enter-active {transition:all .1s ease-in;}
+    .container-leave-to, .container-enter {opacity:0.5;}
+}
+
+

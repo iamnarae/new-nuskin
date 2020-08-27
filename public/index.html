@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta property="fb:app_id" content="596144061325412" />
+    <meta property="og:title" content="뉴스킨허브" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="https://resource2018.nuskinkorea.co.kr/ContentsImages/static/images/common/thumb_social.jpg" />
+    <meta property="og:description" content="글로벌 뷰티 및 헬스케어 전문업체, 뉴스킨, 파마넥스, 빅플래닛 브랜드 소개, 제품 정보 제공" />
+    <meta property="og:type" content="website" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://connect.facebook.net/ko_KR/sdk.js"></script>
+    <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+    <script>Kakao.init('e51e9aed2914294a9c924f4993fb7412');</script>
+    <link rel="stylesheet" href="https://resource2018.nuskinkorea.co.kr/ContentsImages/static/css/swiper.min.css">
+    <script src="https://resource2018.nuskinkorea.co.kr/ContentsImages/static/js/swiper.min.js"></script>
+    <script>
+      var gVueAroConfig = {
+          loginInfo : {
+            memberId: 'iamnarae',
+            nm_kr : '김나래', 
+            memberType: 'DIST',
+            memberTitle : '10',
+            authKey : 'c4c1d7143d394e3693021449a1057d9c'
+          },
+        };
+        function transShareContent(url, title, desc, image){
+          $("meta[property='og:title']").attr("content", title)
+          $("meta[property='og:url']").attr("content", url)
+          $("meta[property='og:image']").attr("content", image)
+          $("meta[property='og:description']").attr("content", desc)
+        }
+      </script>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="ch-appContents"></div>
+  </body>
+</html>

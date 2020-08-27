@@ -1,0 +1,81 @@
+@CHARSET "UTF-8";
+
+/*
+	- Weight -
+	Light : 300
+	Regular : 400
+	Bold : 700
+*/
+@font-face {
+  font-family:'Malgun Sam';
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://resource2018.nuskinkorea.co.kr/ContentsImages/static/fonts/NUSKINLight.eot);
+  src: local(※),  	
+       url(https://resource2018.nuskinkorea.co.kr/ContentsImages/static/fonts/NUSKINLight.woff) format('woff'),
+       url(https://resource2018.nuskinkorea.co.kr/ContentsImages/static/fonts/NUSKINLight.eot) format('opentype');
+}
+@font-face {
+  font-family:'Malgun Sam';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://resource2018.nuskinkorea.co.kr/ContentsImages/static/fonts/NUSKINBook.eot);
+  src: local(※),  	
+       url(https://resource2018.nuskinkorea.co.kr/ContentsImages/static/fonts/NUSKINBook.woff) format('woff'),
+       url(https://resource2018.nuskinkorea.co.kr/ContentsImages/static/fonts/NUSKINBook.eot) format('opentype');
+}
+@font-face {
+  font-family:'Malgun Sam';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://resource2018.nuskinkorea.co.kr/ContentsImages/static/fonts/NUSKINBold.eot);
+  src: local(※),  	
+       url(https://resource2018.nuskinkorea.co.kr/ContentsImages/static/fonts/NUSKINBold.woff) format('woff'),
+       url(https://resource2018.nuskinkorea.co.kr/ContentsImages/static/fonts/NUSKINBold.eot) format('opentype');
+}
+
+@font-face {
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight:300;
+  src: local(※),  	
+       url(https://resource2018.nuskinkorea.co.kr/ContentsImages/static/fonts/NotoSansCJKkr-Light.woff) format('woff'),
+       url(https://resource2018.nuskinkorea.co.kr/ContentsImages/static/fonts/NotoSansCJKkr-Light.woff2) format('woff2'),
+       url(https://resource2018.nuskinkorea.co.kr/ContentsImages/static/fonts/NotoSansCJKkr-Light.eot);
+} 
+@font-face {
+ font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight:400;
+  src: local(※),  	
+       url(https://resource2018.nuskinkorea.co.kr/ContentsImages/static/fonts/NotoSansCJKkr-Regular.woff) format('woff'),
+       url(https://resource2018.nuskinkorea.co.kr/ContentsImages/static/fonts/NotoSansCJKkr-Regular.woff2) format('woff2'),
+       url(https://resource2018.nuskinkorea.co.kr/ContentsImages/static/fonts/NotoSansCJKkr-Regular.eot);
+} 
+@font-face {
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 500;
+  src: local(※),  	
+       url(https://resource2018.nuskinkorea.co.kr/ContentsImages/static/fonts/NotoSansCJKkr-Medium.woff) format('woff'),
+       url(https://resource2018.nuskinkorea.co.kr/ContentsImages/static/fonts/NotoSansCJKkr-Medium.woff2) format('woff2'),
+       url(https://resource2018.nuskinkorea.co.kr/ContentsImages/static/fonts/NotoSansCJKkr-Medium.eot);
+}
+@font-face {
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 600;
+  src: local(※),  	
+       url(https://resource2018.nuskinkorea.co.kr/ContentsImages/static/fonts/NotoSansCJKkr-Bold.woff2) format('woff2'),
+       url(https://resource2018.nuskinkorea.co.kr/ContentsImages/static/fonts/NotoSansCJKkr-Bold.woff) format('woff'),
+       url(https://resource2018.nuskinkorea.co.kr/ContentsImages/static/fonts/NotoSansCJKkr-Bold.eot);
+}
+ @font-face {
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 700;
+  src: local(※),  	
+       url(https://resource2018.nuskinkorea.co.kr/ContentsImages/static/fonts/NotoSansCJKkr-Black.woff) format('woff'),
+       url(https://resource2018.nuskinkorea.co.kr/ContentsImages/static/fonts/NotoSansCJKkr-Black.woff2) format('woff2'),
+       url(https://resource2018.nuskinkorea.co.kr/ContentsImages/static/fonts/NotoSansCJKkr-Black.eot);
+}
